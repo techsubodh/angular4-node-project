@@ -34,7 +34,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/message', messagesRoutes);
-//app.use('/user', usersRoutes);
+app.use('/user', usersRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler
